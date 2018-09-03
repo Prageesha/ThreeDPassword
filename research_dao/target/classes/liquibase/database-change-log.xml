@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+	
+	<!-- Including the common file with properties and preconditions -->
+	<include file="src/main/resources/liquibase/common-changelog-setting.xml" relativeToChangelogFile="false" />
+	
+	<!-- Liquibase starting point is sprint-0.1 -->
+    <!-- sprint-0.1 initial db schema -->
+	<include file="src/main/resources/liquibase/research-0.1.xml" />
+	
+	
+</databaseChangeLog>

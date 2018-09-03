@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<DatabaseServerConfig>
+    <DBCluster>
+        <DBServerAddress>localhost:3306</DBServerAddress>
+	</DBCluster>
+	<DBName>research_db</DBName>
+	<DBUser>root</DBUser>
+	<DBPassword>root</DBPassword>
+	<ConTimeout>300</ConTimeout>
+	<MinIdleCons>10</MinIdleCons>
+	<MaxPoolSize>10</MaxPoolSize>
+	<PoolName>ResearchDbConPool</PoolName>
+	<TxIsolation>TRANSACTION_READ_COMMITTED</TxIsolation>
+	<RetryCount>3</RetryCount>
+</DatabaseServerConfig>

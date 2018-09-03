@@ -1,0 +1,12 @@
+com/threed/password/research/module/rest/dto/GraphicalPasswordRequest.class
+com/threed/password/research/module/rest/resource/TextPasswordResource.class
+com/threed/password/research/module/rest/dto/ThreeDPasswordRequest.class
+com/threed/password/research/module/rest/dto/Password.class
+com/threed/password/research/module/db/DBUtil.class
+com/threed/password/research/module/rest/resource/BaseResource.class
+com/threed/password/research/module/rest/dto/ThreedPassword.class
+com/threed/password/research/module/rest/resource/GraphicalPasswordResource.class
+com/threed/password/research/transformer/ResponseTransformer.class
+com/threed/password/research/module/Main.class
+com/threed/password/research/module/rest/dto/TextPasswordRegistrationRequest.class
+com/threed/password/research/module/rest/resource/ThreeDPasswordResource.class

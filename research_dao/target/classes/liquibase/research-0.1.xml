@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+         
+<!-- create text_password table- -->
+	<changeSet id="1" author="Prageesha">
+		<createTable tableName="text_password">
+
+			<column name="user_name" type="varchar(200)">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+
+			<column name="password" type="varchar(2000)">
+				<constraints nullable="false" />
+			</column>
+			<column name="salt" type="varchar(255)">
+				<constraints nullable="false" />
+			</column>
+		</createTable>
+		<rollback>
+			<dropTable tableName="text_password" />
+		</rollback>
+	</changeSet>
+
+
+    
+</databaseChangeLog>

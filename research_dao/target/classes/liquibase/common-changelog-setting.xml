@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+
+	<!-- Add all properties which can be used commonly in change log file(s) -->
+	<!-- properties from any sprint can be defined here! -->
+	<property name="auto.increment" value="true" dbms="hsqldb" />
+	<property name="boolean.type" value="BIT" dbms="hsqldb" />
+	<property name="text.type" value="LONGVARCHAR" dbms="hsqldb" />
+
+	<property name="auto.increment" value="true" dbms="mysql" />
+	<property name="boolean.type" value="BIT" dbms="mysql" />
+	<property name="text.type" value="TEXT" dbms="mysql" />
+	
+	<property name="tablespace.name" value="RUH_ENG" dbms="mysql" />
+
+	<!-- Schema compatibility: default schema (includes) is compatible only 
+		to run on either HSQL or MySQL -->
+	<preConditions>
+		<or>
+			<and>
+				<dbms type="hsqldb" />
+			</and>
+			<and>
+				<dbms type="mysql" />
+			</and>
+		</or>
+	</preConditions>
+
+</databaseChangeLog> 
